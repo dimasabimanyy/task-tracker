@@ -7,38 +7,42 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="app-title">
-        <h1>Trackers</h1>
-        <p>
-          Catat, mulai timer, dan lacak apapun—dari tugas kecil hingga proyek
-          besar—dalam satu aplikasi yang mudah digunakan.
-        </p>
-      </div>
-
-      <div class="main-content">
-        <!-- Left Column -->
-        <div class="left-column">
-          <h2>Timer</h2>
-          
-          <div id="display" class="timer-display">00:00:00</div>
-
-          <div class="input-container">
-            <input
-              type="text"
-              id="taskInput"
-              placeholder="Masukkan nama tugas..."
-            />
-            <button id="startStop">Mulai</button>
-          </div>
+    <div class="app">
+      <div class="container">
+        <div class="app-title">
+          <h1>Trackers</h1>
+          <p>
+            Catat, mulai timer, dan lacak apapun—dari tugas kecil hingga proyek
+            besar—dalam satu aplikasi yang mudah digunakan.
+          </p>
         </div>
-        <!-- Right Column -->
-        <div class="right-column">
-          <h2>Histori</h2>
-          <ul id="task-list"></ul>
+
+        <div class="main-content">
+          <!-- Left Column -->
+          <div class="left-column">
+            <h2>Timer</h2>
+
+            <div id="display" class="timer-display">00:00:00</div>
+
+            <div class="input-container">
+              <input
+                type="text"
+                id="taskInput"
+                placeholder="Masukkan nama tugas..."
+              />
+              <button id="startStop">Mulai</button>
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div class="right-column">
+            <h2>Histori</h2>
+            <ul id="task-list"></ul>
+          </div>
         </div>
       </div>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
