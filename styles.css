@@ -14,16 +14,32 @@ body {
 }
 
 .app {
+  background: hsla(hsla(12, 84%, 68%, 1) 1%);
   background: linear-gradient(
     90deg,
     hsla(12, 84%, 68%, 1) 0%,
     hsla(343, 100%, 66%, 1) 100%
   );
+
+  background: -moz-linear-gradient(
+    90deg,
+    90deg,
+    hsla(12, 84%, 68%, 1) 0%,
+    hsla(343, 100%, 66%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    90deg,
+    hsla(12, 84%, 68%, 1) 0%,
+    hsla(343, 100%, 66%, 1) 100%
+  );
+
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: .8rem;
+  padding: 0.8rem;
 }
 
 h1,
@@ -129,12 +145,12 @@ h6 {
   padding: 10px;
   border-radius: 0.1rem;
   font-size: 1rem;
-  margin: .8rem 0;
+  margin: 0.8rem 0;
 }
 
 #task-list li h4 {
   font-weight: 500;
-  margin-bottom: .4rem;
+  margin-bottom: 0.4rem;
 }
 
 #task-list li small {
