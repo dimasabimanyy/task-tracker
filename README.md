@@ -38,6 +38,13 @@ This project is featured in a [YouTube tutorial](#) where you can learn how to b
 2. Set your task and start the timer.
 3. Monitor your progress and stay productive.
 
+# Thanks to
+- https://coolors.co/gradients: for gradient background color
+- https://fonts.google.com/
+- https://favicon.io/
+- https://www.netlify.com/
+
+
 ## Contributing
 
 Contributions are welcome! If you have ideas for features or improvements, feel free to fork the repository and submit a pull request.
