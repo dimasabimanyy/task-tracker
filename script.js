@@ -50,7 +50,7 @@ let startTime = null;
 // Elemen DOM untuk interaksi
 const display = document.querySelector("#display"); // Elemen untuk menampilkan waktu
 const startStopButton = document.querySelector(".start-stop"); // Tombol untuk mulai/berhenti timer
-const taskInput = document.querySelector(".task-nput"); // Input untuk nama tugas
+const taskInput = document.querySelector(".task-input"); // Input untuk nama tugas
 const taskList = document.querySelector("#task-list"); // Elemen untuk menampilkan riwayat tugas
 const alertBox = document.querySelector(".alert-box"); // Elemen untuk pesan notifikasi
 
