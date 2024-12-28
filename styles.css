@@ -103,7 +103,7 @@ h6 {
   margin-top: 20px;
 }
 
-#taskInput {
+.task-input {
   padding: 10px;
   font-size: 1.1rem;
   border: none;
@@ -114,7 +114,7 @@ h6 {
   color: #333; /* Teks tetap terbaca */
 }
 
-#startStop {
+.start-stop {
   padding: 12px 25px;
   font-size: 1.2rem;
   cursor: pointer;
@@ -133,7 +133,7 @@ h6 {
   margin-bottom: .8rem;
 }
 
-#startStop:hover {
+.start-stop:hover {
   background-color: #ff5f4f;
 }
 

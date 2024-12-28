@@ -36,18 +36,12 @@ let task = "";
 
 // Array untuk menyimpan riwayat tugas yang telah selesai
 let taskHistory = [
-  {
-    task: "Belajar javascript dasar", // Nama tugas
-    duration: "00:00:07", // Durasi tugas dalam format HH:MM:SS
-    start: "15:49:14", // Waktu mulai tugas
-    end: "15:49:21", // Waktu selesai tugas
-  },
-  {
-    task: "Fix bug website timer",
-    duration: "00:45:38",
-    start: "15:49:14",
-    end: "15:49:21",
-  },
+  // {
+  //   task: "Belajar javascript ES6", // Nama tugas
+  //   duration: "00:45:30", // Durasi berlangsung
+  //   start: "15:49:14", // Waktu tugas dimulai
+  //   end: "16:34:44", // Waktu ketika tugas berakhir
+  // }
 ];
 
 // Waktu mulai tugas yang sedang berjalan
@@ -55,8 +49,8 @@ let startTime = null;
 
 // Elemen DOM untuk interaksi
 const display = document.querySelector("#display"); // Elemen untuk menampilkan waktu
-const startStopButton = document.querySelector("#startStop"); // Tombol untuk mulai/berhenti timer
-const taskInput = document.querySelector("#taskInput"); // Input untuk nama tugas
+const startStopButton = document.querySelector(".start-stop"); // Tombol untuk mulai/berhenti timer
+const taskInput = document.querySelector(".task-nput"); // Input untuk nama tugas
 const taskList = document.querySelector("#task-list"); // Elemen untuk menampilkan riwayat tugas
 const alertBox = document.querySelector(".alert-box"); // Elemen untuk pesan notifikasi
 
@@ -99,7 +93,7 @@ function formatTimestamp(date) {
   const hours = String(date.getHours()).padStart(2, "0"); // Jam
   const minutes = String(date.getMinutes()).padStart(2, "0"); // Menit
   const seconds = String(date.getSeconds()).padStart(2, "0"); // Detik
-  
+
   return `${hours}:${minutes}:${seconds}`;
 }
 
@@ -210,7 +204,7 @@ function updateTaskHistory() {
     li.innerHTML = `<h4>${taskData.task}</h4> 
     <small>Durasi: ${formatTimeFromHHMMSS(taskData.duration)}</small>
     <br> 
-    <small>Dimulai: ${taskData.start} | Selesai: ${taskData.end}</small>`; // Tambahkan html kedalam elemen list 
+    <small>Dimulai: ${taskData.start} | Selesai: ${taskData.end}</small>`; // Tambahkan html kedalam elemen list
 
     taskList.appendChild(li); // Tambahkan elemen ke daftar
   });
